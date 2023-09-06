@@ -19,6 +19,7 @@
     box-shadow: 18px 14px 40px 5px rgba(0,0,0,0.38);
     -webkit-box-shadow: 18px 14px 40px 5px rgba(0,0,0,0.38);
     -moz-box-shadow: 18px 14px 40px 5px rgba(0,0,0,0.38);
+    z-index: 10;
 }
 .info{
     height: 65%;
@@ -52,4 +53,26 @@
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    z-index: 11;
+    position: relative;
+}
+.arrow{
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background-color: black;
+    top: 50%; /* Положение вверху */
+    left: 50%;
+    transform-origin: 50% 0%;
+    transform: translate(-50%, -100%) rotate(0deg);
+    transition: transform 0.1s ease;
+    box-sizing:content-box;
+    z-index: 50;
 }
