@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day #10. Guess the rotation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <main class="panel">
+            <section class="info">
+                <p class="displayValues" id="angle"></p>
+            </section>
+            <section class="controls">
+                <input type="range" min="0" val="180" max="360"id="angleInput">
+                <button id="submitButton">Submit!</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
